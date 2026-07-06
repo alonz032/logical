@@ -1,0 +1,31 @@
+             +---------+
+             | Start   |
+             +---------+
+                  |
+                  v
+         Load value into EAX
+                  |
+                  v
+          XOR EAX, EAX
+                  |
+                  v
+      Store result (0) in memory
+                  |
+                  v
+       Load value into EBX
+                  |
+                  v
+          TEST EBX, 1
+                  |
+          +-------+-------+
+          |               |
+       Zero Flag?        No
+      (Even Number)     (Odd Number)
+          |               |
+          v               v
+      ECX = 0         ECX = 1
+          |               |
+          +-------+-------+
+                  |
+                  v
+               Exit
